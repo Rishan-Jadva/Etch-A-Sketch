@@ -4,6 +4,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height:100vh;
@@ -15,8 +16,11 @@ body{
     width: 500px;
 }
 .container div{
-    background-color: aquamarine;
+    background-color: white;
     height: calc(500px/16);
     width: calc(500px/16);
-    outline: 1px solid red;
+    outline: 1px solid grey;
+}
+button{
+    margin:25px;
 }
