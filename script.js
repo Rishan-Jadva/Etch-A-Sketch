@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
 })
 container.addEventListener('mouseover', (event) =>{
-    event.target.style.backgroundColor = 'black';
+    event.target.style.backgroundColor = `rgb(${numColor()},${numColor()},${numColor()})`;
 })
 button.addEventListener('click', reset)
 function reset(){
@@ -27,4 +27,7 @@ function reset(){
         div.style.width = `calc(500px/${sides})`;
     }
 
+}
+function numColor(){
+    return Math.floor(Math.random()*256);
 }
